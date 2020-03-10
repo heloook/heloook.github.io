@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="清晰完整地讲述如何使用HexoNexTGitHub等工具，搭建自己的博客。减少麻烦，节省时间。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+NexT+GitHub 搭建个人博客">
+<meta property="og:url" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="龙小歪的博客">
+<meta property="og:description" content="清晰完整地讲述如何使用HexoNexTGitHub等工具，搭建自己的博客。减少麻烦，节省时间。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%201.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%202.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%203.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%204.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%205.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%206.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%207.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%208.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%209.png">
+<meta property="og:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%2010.png">
+<meta property="article:published_time" content="2020-03-10T17:15:36.000Z">
+<meta property="article:modified_time" content="2020-03-10T17:36:55.158Z">
+<meta property="article:author" content="heloook">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-搭建个人博客/"/>
+
+
+
+
+
+  <title>Hexo+NexT+GitHub 搭建个人博客 | 龙小歪的博客</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">龙小歪的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="heloook">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/dragon.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="龙小歪的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hexo+NexT+GitHub 搭建个人博客</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-11T01:15:36+08:00">
+                2020-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.3k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  清晰完整地讲述如何使用Hexo,NexT,GitHub等工具，搭建自己的博客。减少麻烦，节省时间。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h1><ol>
+<li><p>安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a>。</p>
+</li>
+<li><p>安装 <a href="https://gitforwindows.org/" target="_blank" rel="noopener">git</a>。</p>
+</li>
+<li><p>任意磁盘位置，新建文件夹MyBlog。</p>
+</li>
+<li><p>安装Hexo。</p>
+<p> 在MyBlog文件夹内，右键，Git Bash Here, 执行命令：</p>
+<pre><code>npm install -g hexo-cli</code></pre><p> 耐心等待一段时间，出现：</p>
+<p> <img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled.png" alt></p>
+<p> 然后执行命令：</p>
+<pre><code>hexo init</code></pre><p> 等待一段时间，出现：</p>
+<p> <img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%201.png" alt="Hexo%20NexT%20GitHub/Untitled%201.png"></p>
+<p> Hexo 安装完成。</p>
+</li>
+<li><p>安装NexT主题。</p>
+<p> 执行命令：</p>
+<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></pre><p> 出现：</p>
+<p> <img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%202.png" alt="Hexo%20NexT%20GitHub/Untitled%202.png"></p>
+<p> 修改/<em>MyBlog</em>/_config.yml文件。推荐使用Visual Sudio Code来编辑它。</p>
+<p> <strong>theme: landscape</strong> 修改为 <strong>theme: next</strong></p>
+</li>
+<li><p>写好的文章放在哪里。</p>
+<p> <em>MyBlog\source_posts</em> 文件夹。如果你想发布一篇新文章，把它转为md文件放在这个文件夹中。现在这个文件夹中已经有一篇文章hello-world.md， 接下来把它发布到你的博客中。</p>
+</li>
+<li><p>连接GitHub与本地。</p>
+<p> 创建一个GitHub 仓库，仓库的命名格式为：yourusername.github.io。</p>
+<p> 修改/<em>MyBlog</em>/_config.yml文件, 找到<strong>deploy</strong>, 将其改为：</p>
+<pre><code>deploy:
+  type: git
+  repo: https://github.com/yourusername/yourusername.github.io.git #注意修改yourusername
+  branch: master</code></pre><p> 执行命令：</p>
+<pre><code>npm install hexo-deployer-git --save</code></pre><p> 出现：</p>
+<p> <img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%203.png" alt="Hexo%20NexT%20GitHub/Untitled%203.png"></p>
+<p> 依次执行命令：</p>
+<pre><code>git config --global user.name &quot;yourusername&quot; #注意修改yourusername
+
+git config --global user.email &quot;youremail&quot; #注意修改youremail</code></pre><p> 然后，执行命令：</p>
+<pre><code>hexo d</code></pre><p> 如果提示输入GitHub用户名和密码，输入。</p>
+<p> 恭喜，博客发布成功。前往<a href="https://yourusername.github.io，可看到你的博客。" target="_blank" rel="noopener">https://yourusername.github.io，可看到你的博客。</a></p>
+</li>
+</ol>
+<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><ol>
+<li><p>文章的图片放在哪里</p>
+<p> 强烈建议采用如下设置，以防文章图片无法正常显示。、</p>
+<p> 修改/<em>MyBlog</em>/_config.yml文件:</p>
+<p> 将<strong>post_asset_folder: false</strong>改为<strong>post_asset_folder: true</strong></p>
+<p> 然后，执行命令：</p>
+<pre><code>npm install https://github.com/CodeFalling/hexo-asset-image -- save</code></pre><p> 设置完成后。当执行 <strong><em>hexo new “文章名”</em></strong>命令 来创建文章的时候，会在/source/_posts目录下生成名字相同的md文件和文件夹。将你想在博文中插入的图片放到那个文件夹中。</p>
+<p> 在md文件中引用图片的时候，使用如下代码即可：</p>
+<pre><code>&lt;img src=P70507-171306-EFFECTS.jpg width=500 title=&quot;图片名&quot; align=center /&gt; #设置了图片宽度，高度随之按比例变化
+或
+![](P70507-171306-EFFECTS.jpg &quot;野菊&quot;) #图片原大小</code></pre></li>
+<li><p>选择NexT主题的风格</p>
+<p> 修改/<em>MyBlog</em>/themes/next/_config.yml文件。</p>
+<ul>
+<li><p>Muse风格</p>
+<p><img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%204.png" alt="Hexo%20NexT%20GitHub/Untitled%204.png"></p>
+</li>
+<li><p>Mist风格</p>
+<p><img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%205.png" alt="Hexo%20NexT%20GitHub/Untitled%205.png"></p>
+</li>
+<li><p>Pisces风格</p>
+<p><img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%206.png" alt="Hexo%20NexT%20GitHub/Untitled%206.png"></p>
+</li>
+<li><p>Gemini风格（更立体，但布局与Pisces相同）</p>
+<p><img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%207.png" alt="Hexo%20NexT%20GitHub/Untitled%207.png"></p>
+</li>
+</ul>
+</li>
+<li><p>设置网站图标icon</p>
+<p> 将你准备好的图标，放在<em>\MyBlog\themes\next\source\images</em>文件夹中，替换掉favicon-16x16-next.png和favicon-32x32-next.png。</p>
+<p> 刷新网页后：</p>
+<p> <img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%208.png" alt="Hexo%20NexT%20GitHub/Untitled%208.png"></p>
+</li>
+<li><p>设置博客Menu</p>
+<p> 编辑<em>hexo/themes/next/_config.yml</em>，我个人喜欢的配置如下：</p>
+<pre><code>menu:
+  home: /||home
+  about: /about/||user
+  tags: /tags/||tags
+  #categories: /categories/||th
+  archives: /archives/||archive
+  #schedule: /schedule/||calendar
+  #sitemap: /sitemap.xml||sitemap
+  #commonweal: /404/||heartbeat</code></pre><p> 依次执行命令：</p>
+<pre><code>hexo new page about
+
+hexo new page tags
+
+hexo new page categories</code></pre><ul>
+<li><p>about页设置</p>
+<p>找到<em>/blog/source/about/index.md</em>文件，编辑它。我的格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 寄语</span><br><span class="line">date: 2019-03-07 18:38:49</span><br><span class="line">type: &quot;about&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&#123;% cq %&#125;一段自我介绍&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>再点击about，依然没有页面显示，其他的按钮点击后也没有页面出来。出现以下问题：</p>
+<p><img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%209.png" alt="Hexo%20NexT%20GitHub/Untitled%209.png"></p>
+<p>没有道理啊，我的设置是正确的啊，哪里出问题了呢？</p>
+<p>花了不少时间终于找到了答案：方框里的%20是空格的意思。去掉/之后的空格，||之后的空格，就可以显示成功了。</p>
+<p><img src="/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Untitled%2010.png" alt="Hexo%20NexT%20GitHub/Untitled%2010.png"></p>
+<p>这可能和电脑系统语言版本或者NexT主题版本有关。没有遇到这个问题最好，如果遇到了，就尝试按照上面的方法去解决吧。</p>
+</li>
+<li><p>Tags页设置</p>
+<p>找到<em>/blog/source/tags/index.md</em>文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Tags</span><br><span class="line">date: 2020-03-10 15:46:24</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Categories页设置</p>
+<p>找到<em>/blog/source/c*ategories</em>/index.md*文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Categories</span><br><span class="line">date: 2020-03-10 15:44:49</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<p> 一篇文章中如何加入标签和分类呢？示范如下：</p>
+<pre><code>---
+title: 示范tags和categories
+date: 20xx-05-18 16:41:52
+tags:
+    - Hexo
+    - 博客
+categories:
+    - 心得
+    - 博客
+---</code></pre><hr>
+</li>
+<li><p>博客头像</p>
+<p> 将头像图片，例如avatar.gif，放置在 \MyBlog\themes\next\source\images 文件夹中</p>
+<p> 编辑<em>hexo/themes/next/_config.yml：</em></p>
+<pre><code>#Sidebar Avatar
+# in theme directory(source/images): /images/avatar.gif
+# in site  directory(source/uploads): /uploads/avatar.gif
+avatar: /images/avatar.gif</code></pre></li>
+<li><p>博客基本信息</p>
+<p> 修改/<em>MyBlog</em>/_config.yml文件。将文件中，一些属性的值修改为你的个人信息。主要修改以下信息：</p>
+<pre><code>title: 龙小歪
+author: heloook
+url: https://heloook.github.io</code></pre><p> 社交链接设置。打开/<em>MyBlog</em>/themes/next/_config.yml文件，修改以下内容：</p>
+<pre><code>social:
+  #GitHub: https://github.com/yourname || github
+  E-Mail: mailto:yourname@gmail.com || envelope
+  #Google: https://plus.google.com/yourname || google
+  #Twitter: https://twitter.com/yourname || twitter
+  #FB Page: https://www.facebook.com/yourname || facebook
+  #VK Group: https://vk.com/yourname || vk
+  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
+  #YouTube: https://youtube.com/yourname || youtube
+  Instagram: https://instagram.com/yourname || instagram
+  #Skype: skype:yourname?call|chat || skype</code></pre></li>
+<li><p>启用Disqus评论</p>
+<p> 非常推荐使用Disqus评论系统。参考文章 H<a href="http://www.isimble.com/2018/09/13/hexo-enable-disqus/" target="_blank" rel="noopener">exo开启disqus评论系统</a>，进行设置。</p>
+</li>
+</ol>
+<h1 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h1><ol>
+<li><p>文章字数统计</p>
+<p> 执行命令</p>
+<pre><code>npm i --save hexo-wordcount</code></pre><p> 打开<em>hexo/themes/next/_config.yml</em>文件，找到wordcount，属性值改为true</p>
+<pre><code>post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: false
+  totalcount: false
+  separated_meta: true</code></pre></li>
+<li><p>隐藏文章评论数</p>
+<p> 打开 <em>themes/next/source/css/_custom/custom.styl</em> 文件，添加代码：</p>
+<pre><code>//屏蔽标题下的评论数量
+.post-comments-count {
+  display: none;
+}</code></pre></li>
+<li><p>版权声明</p>
+<p> 打开<em>hexo/themes/next/_config.yml</em>文件，找到post_copyright，属性enable值改为true。</p>
+</li>
+<li><p>站内搜索等更多设置</p>
+<p> 可以阅读文章<a href="http://yearito.cn/posts/hexo-advanced-settings.html" target="_blank" rel="noopener">Hexo 搭建个人博客系列：进阶设置篇</a></p>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>激赏咖啡</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="heloook WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    heloook
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="Hexo+NexT+GitHub 搭建个人博客">https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/dragon.png"
+                alt="heloook" />
+            
+              <p class="site-author-name" itemprop="name">heloook</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hpl9yi@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/heloooook" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#入门"><span class="nav-number">1.</span> <span class="nav-text">入门</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#进阶"><span class="nav-number">2.</span> <span class="nav-text">进阶</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优化"><span class="nav-number">3.</span> <span class="nav-text">优化</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">heloook</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://heloook.github.io/2020/03/11/Hexo-NexT-GitHub-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/';
+          this.page.identifier = '2020/03/11/Hexo-NexT-GitHub-搭建个人博客/';
+          this.page.title = 'Hexo+NexT+GitHub 搭建个人博客';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://https-heloook-github-io-3.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
