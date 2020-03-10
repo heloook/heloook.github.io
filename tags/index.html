@@ -80,13 +80,13 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
+<meta property="og:title" content="Tags">
 <meta property="og:url" content="https://heloook.github.io/tags/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="龙小歪">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-10T07:46:24.000Z">
-<meta property="article:modified_time" content="2020-03-10T08:12:39.305Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2020-03-10T08:57:01.536Z">
+<meta property="article:author" content="heloook">
 <meta name="twitter:card" content="summary">
 
 
@@ -123,7 +123,7 @@
 
 
 
-  <title>tags | Hexo</title>
+  <title>Tags | 龙小歪</title>
   
 
 
@@ -153,7 +153,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">龙小歪</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -253,7 +253,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
+	<h1 class="post-title" itemprop="name headline">Tags</h1>
 
 
 
@@ -292,6 +292,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -319,7 +322,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <img class="site-author-image" itemprop="image"
+                src="/images/dragon.png"
+                alt="heloook" />
+            
+              <p class="site-author-name" itemprop="name">heloook</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -344,6 +351,22 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hpl9yi@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://instagram.com/heloooook" target="_blank" title="Instagram">
+                      
+                        <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -375,7 +398,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">heloook</span>
 
   
 </div>
@@ -539,6 +562,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'uJkm1FcIa3w2ozFk2MlXzjnJ-gzGzoHsz',
+        appKey: '7tBOosvs41z5qh5EQ45j7gRG',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
