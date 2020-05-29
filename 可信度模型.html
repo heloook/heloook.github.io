@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="专家系统," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -82,18 +82,14 @@
 
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="专家系统简介（二）">
-<meta property="og:url" content="https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89.html">
+<meta property="og:title" content="可信度模型">
+<meta property="og:url" content="https://heloook.github.io/%E5%8F%AF%E4%BF%A1%E5%BA%A6%E6%A8%A1%E5%9E%8B.html">
 <meta property="og:site_name" content="龙小歪的部落格">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89/rule.svg">
-<meta property="og:image" content="https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89/application.png">
-<meta property="article:published_time" content="2020-05-26T09:22:30.000Z">
-<meta property="article:modified_time" content="2020-05-27T08:17:24.457Z">
+<meta property="article:published_time" content="2020-05-29T00:36:15.000Z">
+<meta property="article:modified_time" content="2020-05-29T01:12:55.498Z">
 <meta property="article:author" content="heloook">
-<meta property="article:tag" content="专家系统">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89/rule.svg">
 
 
 
@@ -123,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://heloook.github.io/专家系统简介（二）.html"/>
+  <link rel="canonical" href="https://heloook.github.io/可信度模型.html"/>
 
 
 
 
 
-  <title>专家系统简介（二） | 龙小歪的部落格</title>
+  <title>可信度模型 | 龙小歪的部落格</title>
   
 
 
@@ -290,7 +286,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89.html">
+    <link itemprop="mainEntityOfPage" href="https://heloook.github.io/%E5%8F%AF%E4%BF%A1%E5%BA%A6%E6%A8%A1%E5%9E%8B.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="heloook">
@@ -307,7 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">专家系统简介（二）</h1>
+          <h1 class="post-title" itemprop="name headline">可信度模型</h1>
         
 
         <div class="post-meta">
@@ -319,8 +315,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-26T17:22:30+08:00">
-                2020-05-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-29T08:36:15+08:00">
+                2020-05-29
               </time>
             
 
@@ -329,28 +325,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index">
-                    <span itemprop="name">专家系统</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -373,7 +347,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  5.6k
+                  369
                 </span>
               
 
@@ -402,56 +376,17 @@
       
 
       
-        <p>原文：<a href="https://en.wikipedia.org/wiki/Expert_system#Disadvantages" target="_blank" rel="noopener">维基百科 Expert Systems</a></p>
-<p>在人工智能中，专家系统是一种模拟人类专家决策能力的计算机系统。专家系统旨在通过知识体系的推理来解决复杂的问题，主要表现为if-then规则，而不是通过传统的过程代码。第一个专家系统是在20世纪70年代创建的，然后在20世纪80年代迅速发展起来。专家系统是第一批真正成功的人工智能(AI)软件。专家系统分为两个子系统:推理机子系统和知识库子系统。知识库表示事实和规则。推理引擎将规则应用于已知事实，以推断新的事实。推理引擎还可以包括解释和调试功能。</p>
-<h1 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h1><h2 id="早期发展"><a href="#早期发展" class="headerlink" title="早期发展"></a>早期发展</h2><p>20世纪40年代末至50年代初，现代计算机出现后不久，研究人员开始意识到这些机器对现代社会的巨大潜力。 最初的挑战之一是使这种机器能够像人类一样“思考”。 特别是，让这些机器能够像人类一样做出重要的决定。 医疗 / 保健领域提出了诱人的挑战，使这些机器作出医疗诊断决策。</p>
-<p>因此，在20世纪50年代末，就在信息时代完全到来之后，研究人员开始试验使用计算机技术模拟人类决策的前景。 例如，生物医学研究人员开始为医学和生物学中的诊断应用创建计算机辅助系统。 这些早期诊断系统利用病人的症状和实验室检测结果作为输入，以产生诊断结果。 这些系统通常被描述为专家系统的早期形式。 然而，研究人员已经意识到，<strong>当使用传统的方法，例如流程图统计模式匹配，或概率论时，存在明显的局限性</strong>。</p>
-<h2 id="正式的引入以及后续发展"><a href="#正式的引入以及后续发展" class="headerlink" title="正式的引入以及后续发展"></a>正式的引入以及后续发展</h2><p>这种情况逐渐导致了专家系统的发展，专家系统采用基于知识的方法。 这些医学专家系统是 MYCIN 专家系统 ，INTERNIST-I 专家系统 ，以及后来在20世纪80年代中期的 CADUCEUS。</p>
-<p>专家系统在1965年左右由Edward Feigenbaum 领导的斯坦福启发式编程项目正式引入，他有时被称为“专家系统之父” ; 其他关键的早期贡献者是 Bruce Buchanan 和 Randall Davis。 斯坦福大学的研究人员试图确定<strong>哪些领域的专业知识具有高度的价值和复杂性</strong>，例如诊断传染病(Mycin)和识别未知的有机分子(Dendral)。 正如 Feigenbaum 所说，“<strong>智能系统的力量来自于它们所拥有的知识，而不是它们的具体形式和推理方案</strong>”这一观点在当时是一个重要的进步，因为过去的研究一直集中启发式计算方法上，最终在尝试开发非常通用的问题解决器(主要是Allen Newell和Herbert Simon的联合工作)。 专家系统成为人工智能(AI)软件的第一批真正成功的形式之一。</p>
-<p>专家系统的研究在法国也很活跃。 在美国，研究的重点往往是基于规则的系统，首先是在 LISP 编程环境之上进行硬编码的系统，然后是 Intellicorp 等供应商开发的专家系统外壳。而在法国，研究的重点更多地放在了 Prolog 开发的系统上。 专家系统 shell 的优势在于，它们在某种程度上更容易为非程序员所使用。 Prolog 环境的优点是它们不仅仅关注 if-then 规则; Prolog 环境提供了一个更好的完整的一阶逻辑环境的实现。</p>
-<p>在1980年代，专家系统激增。 大学提供了专家系统课程，世界五百强公司中有三分之二将这项技术应用于日常商业活动。日本的第五代计算机系统项目引起了国际关注，欧洲增加了研究经费。</p>
-<p>1981年，IBM推出了第一台带有PC DOS操作系统的PC。个人电脑中功能相对强大的芯片的高可购性，与当时在企业IT界占主导地位的大型机中昂贵得多的处理能力成本之间的不平衡，创造了一种新的企业计算架构，称为客户机-服务器模型。计算和推理可以用PC大型机价格的一小部分来执行。这个模型还使业务单元能够绕过公司IT部门，直接构建自己的应用程序。因此，客户端服务器对专家系统市场产生了巨大的影响。专家系统在很多商业领域已经是异类，需要许多IT部门不具备、也不急于开发的新技能。它们很自然地适合于新的基于pc的shell，这些shell承诺将应用程序开发交付给最终用户和专家。在此之前，专家系统的主要开发环境一直是施乐(Xerox)、Symbolics和德州仪器(Texas Instruments)的高端Lisp计算机。随着PC和客户端服务器计算的兴起，Intellicorp和Inference Corporation等供应商将重点转移到开发基于PC的工具上。此外，通常由风险资本(如Aion Corporation、Neuron Data、Exsys和许多其他)资助的新供应商也开始定期出现。</p>
-<p>最早用于大规模产品设计能力的专家系统是1982年开发的SID（整体设计综合）软件程序。SID用LISP编写，生成了93％的VAX 9000 CPU逻辑门。输入软件是由几位专家逻辑设计师创建的一组规则。 SID扩展了规则，并生成了规则本身大小很多倍的软件逻辑综合例程。 出乎意料的是，这些规则的组合导致整体设计超出了专家本身的能力，并且在许多情况下都优于同行。 尽管某些规则与其他规则相矛盾，但速度和面积的顶级控制参数提供了决胜局。 该程序极富争议性，但由于项目预算的限制，仍使用了该程序。 VAX 9000项目完成后，它被逻辑设计人员终止。</p>
-<p>在20世纪70年代中期之前的几年里，人们对于专家系统在许多领域能够取得什么成就的期望往往是极其乐观的。 在这些早期研究的开始，研究人员希望开发完全自动的(即完全计算机化的)专家系统。 人们对计算机能做什么的期望往往过于理想化。 20世纪70年代早期，Richard M. Karp发表了他的突破性论文《组合问题中的可简化性》 ，从而彻底改变了这种状况。 由于Karp的工作，人们清楚地认识到，当一个人设计计算机算法时，有一定的局限性和可能性。 他的发现描述了计算机能做什么和不能做什么。 与这类专家系统相关的许多计算问题都存在一定的实用局限性。 这些发现为该领域的下一步发展奠定了基础。</p>
-<p>在20世纪90年代及以后，专家系统这个术语和独立人工智能系统的概念大多从 IT 词典中消失了。 对此有两种解释。 一个是“专家系统失败了” : IT 世界继续前进，因为专家系统没有兑现他们过分夸大的承诺。 另一个恰恰相反，专家系统只是他们成功的受害者: 随着 IT 专业人员掌握了规则引擎等概念，这些工具从开发特殊用途专家系统的独立工具转变为许多标准工具之一。 许多主要的业务应用程序套件供应商(如 SAP、 Siebel 和 Oracle)将专家系统能力集成到他们的产品套件中，作为一种指定业务逻辑规则引擎的方式，不再仅仅用于定义专家将使用的规则，而是用于任何类型的复杂、不稳定和关键的业务逻辑; 它们通常与业务流程自动化和集成环境密切相关。</p>
-<h2 id="专家系统的当前方法"><a href="#专家系统的当前方法" class="headerlink" title="专家系统的当前方法"></a>专家系统的当前方法</h2><p>先前类型的专家系统的局限性促使研究人员开发新的方法类型。 它们开发了更有效、更灵活和更有力的方法，以便模仿人类的决策过程。 研究人员开发的一些方法是基于人工智能(AI)的新方法，特别是机器学习和带有反馈机制的数据挖掘方法。 相关部分在“缺点”部分的讨论。</p>
-<p>现代系统可以更容易地吸收新知识，从而更新自己。 这样的系统可以更好地从现有的知识中进行概括，并处理大量复杂的数据。 相关的是大数据的主题。 有时这种类型的专家系统被称为“智能系统”。</p>
-<h1 id="软件架构"><a href="#软件架构" class="headerlink" title="软件架构"></a>软件架构</h1><p>专家系统是基于知识的系统的一个例子。 专家系统是第一个使用基于知识的架构的商业系统。 一个基于知识的系统实质上由两个子系统组成: 知识库和推理机。</p>
-<p>知识库代表有关世界的事实。 在诸如Mycin和Dendral的早期专家系统中，这些事实主要表示为关于变量的断言。 在后来使用商业外壳开发的专家系统中，知识库采用了更多的结构，并使用了面向对象编程中的概念。 世界被表示为类，子类，实例和断言被对象实例的值代替。 规则通过查询和声明对象的值来工作。</p>
-<p>推理引擎是一个自动推理系统，它评估知识库的当前状态，应用相关规则，然后将新知识断言到知识库中。 推理引擎还可以包括解释能力，以便它可以通过追溯导致断言的规则的触发，向用户解释用于得出特定结论的推理链。</p>
-<p>推理引擎主要有两种模式：前向链接和后向链接。 不同的方法由推理引擎是由规则的先行（左手边）还是后继（右手边）驱动来决定。 在前向链接中，前一个条件会触发并声明结果。 例如，考虑以下规则：</p>
-<img src="/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89/rule.svg" class>
-
-<p>前向链接的一个简单示例是将Man（Socrates）声明给系统，然后触发推理引擎。 它将匹配R1并将Mortal（Socrates）声明进入知识库。</p>
-<p>向后链接不太直接。 在向后链接中，系统查看可能的结论，并向后工作以查看它们是否正确。 因此，如果系统试图确定Mortal（Socrates）是否为真，它将找到R1并查询知识库以查看Man（Socrates）是否为真。 专家系统外壳的早期创新之一是将推理引擎与用户界面集成在一起。 对于反向链接，此功能尤其强大。 如果系统需要知道一个特定的事实但不是必须知道，那么它可以简单地生成一个输入屏幕并询问用户是否知道该信息。 因此，在此示例中，它可以使用R1询问用户Socrates是否是Man，然后相应地使用该新信息。</p>
-<p>使用规则来明确表示知识也可以使人们具有解释能力。 在上面的简单示例中，如果系统使用R1断言苏格拉底是凡人，并且用户希望了解苏格拉底是凡人的原因，那么他们可以查询系统，并且系统将回头查看引发该断言的规则，并提出这些规则向用户解释。 用户是否用英语询问“为什么苏格拉底是凡人？” 系统会回答“因为所有人都是凡人，而苏格拉底是人”。 一个重要的研究领域是用自然英语从知识库中生成解释，而不是简单地显示更正式但不太直观的规则。</p>
-<p>随着专家系统的发展，许多新技术被集成到各种类型的推理引擎中。其中一些最重要的是：</p>
+        <p><a href="https://www.microsoft.com/en-us/research/publication/certainty-factor-model/" target="_blank" rel="noopener" title="The Certainty-Factor Model">原文：The Certainty-Factor Model</a></p>
+<p>可信度（CF）模型是管理基于规则的系统中的不确定性的一种方法。Shortliffe和Buchananan（1975）在20世纪70年代中期为MYCIN开发了CF模型，这是一个诊断和治疗脑膜炎和血液感染的专家系统。此后，CF模型成为基于规则的系统中进行不确定性管理的标准方法。</p>
+<hr>
+<p><a href="https://engineering.purdue.edu/~engelb/abe565/cf.htm" target="_blank" rel="noopener">原文：Certainty Factors</a></p>
 <ul>
-<li>真相维护。 这些系统将依赖关系记录在知识库中，以便在事实被更改时，依赖项知识也可以相应地更改。 例如，如果系统得知苏格拉底不再是人，那么它将撤销苏格拉底是凡人的断言。</li>
-<li>假设推理。 在这里，知识库可以被分成许多可能的视图，也就是世界。 这使得推理机可以同时探索多种可能性。 例如，系统可能想要探究这两个论断的结果，如果苏格拉底是一个人，那么什么是真的，如果他不是，那么什么是真的？</li>
-<li>不确定性系统。 简单地使用规则表示知识的第一个扩展是将概率与每个规则关联起来。 所以，不是断言苏格拉底是凡人，而是断言苏格拉底可能是凡人，具有某种概率值。 简单概率在一些具有复杂机制的不确定推理系统中得到了扩展，如模糊逻辑和概率组合。</li>
-<li>本体分类。 通过将对象类添加到知识库中，可以进行新型的推理。 除了简单地对对象值进行推理外，系统还可以对对象结构进行推理。 在这个简单的示例中，Man可以代表一个对象类，R1可以重新定义为定义所有人的类的规则。 这些类型的专用推理引擎称为分类器。 尽管分类器在专家系统中并未得到广泛使用，但它们对于非结构化的可变域非常强大，并且是Internet和新兴语义Web的关键技术。</li>
+<li>问题领域的事实和关系（如规则）可能包含不确定性。例如，”如果满足这些条件，这个结果几乎总是会产生。偶尔有一次，会出现不同的结果。”</li>
+<li>用户对一个回答可能会表示怀疑。例如，”我几乎肯定是这个值，然而，值-2也是一种可能。”</li>
 </ul>
-<h1 id="专家系统的优缺点"><a href="#专家系统的优缺点" class="headerlink" title="专家系统的优缺点"></a>专家系统的优缺点</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>知识推理系统的目标是使系统工作所需的关键信息显性化而不是隐性化。在传统的计算机程序中，逻辑被嵌入到代码中，通常只有 IT 专家才能审查这些代码。 使用专家系统的目标是以一种直观、易于理解、评审、甚至由领域专家而不是 IT 专家编辑的格式来指定规则。这种明确的知识表示方式的好处是快速开发和易于维护。</p>
-<p>易于维护是最明显的好处。 这是通过两种方式实现的。 首先，通过消除编写常规代码的需要，使用专家系统就可以避免很多系统问题，这些问题通常是由对系统的很小改动引起的。 本质上，程序的逻辑流程（至少在最高级别）只是系统的给定条件，只需调用推理引擎即可。 这也是获得第二个好处的原因：快速成型。 使用专家级的系统外壳，可以输入一些规则，并能在几天之内开发出原型，而不是通常与复杂的IT项目相关的几个月或一年。</p>
-<p>对专家系统外壳的一种说法是，它们消除了对训练有素的程序员的需求，而且专家可以自己开发系统。 事实上，这种情况很少发生。 虽然专家系统的规则比典型的计算机代码更容易理解，但是他们仍然有一个正式的语法，在那里一个错误的逗号或其他字符可能会像其他任何计算机语言一样造成混乱。 此外，随着专家系统从实验室中的原型转移到商业世界中的部署，集成和维护问题变得更加关键。 不可避免地需要与大型遗留数据库和系统集成并利用这些数据库和系统。 要做到这一点，集成需要与任何其他类型的系统相同的技能。</p>
-<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>学术文献中针对专家系统引用的最常见缺点是知识获取问题。 获取任何软件应用程序的领域专家的时间总是很困难，但是对于专家系统而言，这尤其困难，因为根据定义，专家的价值很高且组织不断需求。 由于这个问题，在后来的专家系统中，大量研究集中在知识获取工具上，以帮助自动化由专家定义的设计，调试和维护规则的过程。 但是，在查看专家系统在实际使用中的生命周期时，其他问题（基本上与任何其他大型系统的问题相同）似乎至少与知识获取同样重要：集成，访问大型数据库和性能。</p>
-<p>性能可能特别成问题，因为早期的专家系统是使用工具(如早期的 Lisp 版本)构建的，这些工具解释代码表达式而不首先编译它们。 这提供了一个强大的开发环境，但其缺点是几乎不可能与最快的编译语言(如 c)的效率相匹配。 早期的专家系统很难集成系统和数据库，因为这些工具大多使用的语言和平台在大多数企业 IT 环境中既不熟悉也不受欢迎——例如 Lisp 和 Prolog 等编程语言，以及 Lisp 机器和个人计算机等硬件平台。 因此，在专家系统工具开发的后期阶段，许多工作都集中在与 COBOL 和大型数据库系统等遗留环境的集成，以及移植到更标准的平台上。 这些问题主要通过客户机-服务器模式的转变得到解决，因为个人电脑在 IT 环境中逐渐被接受为一个合法的平台，用于严肃的业务系统开发，而且价格合理的小型计算机服务器提供了人工智能应用程序所需的处理能力。</p>
-<p>当知识库的规模增加时，专家系统的另一个主要挑战就出现了。 这会导致处理复杂性增加。 例如，当一个拥有1亿条规则的专家系统被设想为终极专家系统时，很明显，这样的系统将过于复杂，将面临太多的计算问题。 一个最高推理机必须能够处理大量的规则才能做出决定。</p>
-<p>在规则太多的情况下，如何验证决策规则是否一致也是一个挑战。</p>
-<p>还有一些问题涉及如何确定规则使用的优先次序以便更有效地运作，或者如何解决模糊性(例如，如果在一个规则中有太多的 else – if 子结构)等等。</p>
-<p>其他问题涉及到在使用已知事实和试图概括到知识库中没有明确描述的其他情况时的过度拟合和过度概括效应。 这些问题也存在于采用机器学习方法的方法中。</p>
-<p>与知识库相关的另一个问题是如何快速有效地更新其知识。 另外，如何添加一个新的知识点(也就是说，如何在许多规则中添加新的知识点)也是一个挑战。 在这方面，依赖于机器学习方法的现代方法更容易。</p>
-<p>由于上述挑战，很明显，<strong>人工智能需要新的方法，而不是基于规则的技术。 这些新的方法是基于使用机器学习技术，并使用反馈机制</strong>。</p>
-<p>医学专家系统(如果将计算机辅助诊断系统视为现代专家系统的话)以及其他应用领域中的关键挑战包括与以下方面有关的问题: 大数据、现有法规、医疗实践、各种算法问题和系统评估。</p>
-<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>Hayes-Roth将专家系统应用程序划分为10个类别，如下表所示。 示例应用程序不在原始的Hayes-Roth表中，其中一些随后出现。尽管这些类别提供了描述专家系统应用程序空间的直观框架，但它们并不是严格的类别，在某些情况下，应用程序可能会显示多个类别的特征。</p>
-<img src="/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89/application.png" class>
-
-<p>Hearsay是通过专家系统方法解决语音识别问题的早期尝试。在大多数情况下，这类专家系统并不那么成功。Hearsay和所有的解释系统本质上都是模式识别系统——在嘈杂的数据中寻找模式。Hearsay识别音流中的音素。其他早期的例子是分析声纳数据来探测俄罗斯潜艇。这些类型的系统被证明更适合于神经网络AI解决方，和基于规则的方法相比。</p>
-<p>CADUCEUS和MYCIN是医学诊断系统。用户向计算机描述他们的症状，就像他们向医生描述一样，计算机返回一个医学诊断。</p>
-<p>Dendral是研究有机分子识别中假设形成的工具。它所解决的一般问题——设计一个给定一组约束的解决方案——是早期专家系统应用于业务领域最成功的领域之一，例如销售人员配置数字设备公司(DEC) VAX计算机和抵押贷款应用程序开发。</p>
-<p>SMH.PAL是评估多残障学生的专家系统。</p>
-<p>Mistral是用于监控大坝安全的专家系统，由Ismes（意大利）在1990年代开发。 它从自动监控系统获取数据并执行大坝状态诊断。 它的第一个副本安装在1992年的Ridracoli大坝（意大利）上，目前仍在24/7/365运行。 它已安装在意大利和国外的数个水坝上（例如，巴西的伊泰普水坝），并以Eydenet的名称在滑坡现场安装，并以Kaleidos的名称安装在古迹上。Mistral是CESI的注册商标。</p>
+<p>许多ES通过数字化的可信度来处理规则和用户提供的信息的不确定性。大多数是基于MYCIN中的可信度。可信度通常从一些负值到一些正值。例如，从-100到100。可信度为-100表示完全不相信某事，而系数为100表示绝对相信某个规则或价值。</p>
+<h1 id="MYCIN-like-可信度"><a href="#MYCIN-like-可信度" class="headerlink" title="MYCIN-like 可信度"></a>MYCIN-like 可信度</h1><p>CF（previous）被定义为在规则的THEN部分的操作之前，与参数值相关的可信度。CF是通过一个规则添加的新证据的可信度。<br><object data="./可信度模型/MYCIN Certainty Factor Combination Rules.pdf" type="application/pdf" width="100%" height="877px"></object></p>
+<h1 id="结合MYCIN-like可信度的CLIPS规则"><a href="#结合MYCIN-like可信度的CLIPS规则" class="headerlink" title="结合MYCIN-like可信度的CLIPS规则"></a>结合MYCIN-like可信度的CLIPS规则</h1><p>可以复制一个带有这些规则的文件<a href="./可信度模型/cf.clp">cf.clp</a>，以便使用。</p>
 
       
     </div>
@@ -472,7 +407,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89.html" title="专家系统简介（二）">https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89.html</a>
+    <a href="https://heloook.github.io/%E5%8F%AF%E4%BF%A1%E5%BA%A6%E6%A8%A1%E5%9E%8B.html" title="可信度模型">https://heloook.github.io/%E5%8F%AF%E4%BF%A1%E5%BA%A6%E6%A8%A1%E5%9E%8B.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -485,12 +420,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" rel="tag"># 专家系统</a>
-          
-        </div>
-      
 
       
       
@@ -500,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%B8%80%EF%BC%89.html" rel="next" title="专家系统简介（一）">
-                <i class="fa fa-chevron-left"></i> 专家系统简介（一）
+              <a href="/%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.html" rel="next" title="证据理论">
+                <i class="fa fa-chevron-left"></i> 证据理论
               </a>
             
           </div>
@@ -509,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.html" rel="prev" title="证据理论">
-                证据理论 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -668,7 +593,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#历史"><span class="nav-number">1.</span> <span class="nav-text">历史</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#早期发展"><span class="nav-number">1.1.</span> <span class="nav-text">早期发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正式的引入以及后续发展"><span class="nav-number">1.2.</span> <span class="nav-text">正式的引入以及后续发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#专家系统的当前方法"><span class="nav-number">1.3.</span> <span class="nav-text">专家系统的当前方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#软件架构"><span class="nav-number">2.</span> <span class="nav-text">软件架构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#专家系统的优缺点"><span class="nav-number">3.</span> <span class="nav-text">专家系统的优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">3.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缺点"><span class="nav-number">3.2.</span> <span class="nav-text">缺点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用"><span class="nav-number">4.</span> <span class="nav-text">应用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MYCIN-like-可信度"><span class="nav-number">1.</span> <span class="nav-text">MYCIN-like 可信度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结合MYCIN-like可信度的CLIPS规则"><span class="nav-number">2.</span> <span class="nav-text">结合MYCIN-like可信度的CLIPS规则</span></a></li></ol></div>
             
 
           </div>
@@ -829,9 +754,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://heloook.github.io/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%BA%8C%EF%BC%89.html';
-          this.page.identifier = '专家系统简介（二）.html';
-          this.page.title = '专家系统简介（二）';
+          this.page.url = 'https://heloook.github.io/%E5%8F%AF%E4%BF%A1%E5%BA%A6%E6%A8%A1%E5%9E%8B.html';
+          this.page.identifier = '可信度模型.html';
+          this.page.title = '可信度模型';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://https-heloook-github-io-3.disqus.com/embed.js';

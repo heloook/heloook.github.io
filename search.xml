@@ -1,22 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>可信度模型</title>
+    <url>/%E5%8F%AF%E4%BF%A1%E5%BA%A6%E6%A8%A1%E5%9E%8B.html</url>
+    <content><![CDATA[<p><a href="https://www.microsoft.com/en-us/research/publication/certainty-factor-model/" target="_blank" rel="noopener" title="The Certainty-Factor Model">原文：The Certainty-Factor Model</a></p>
+<p>可信度（CF）模型是管理基于规则的系统中的不确定性的一种方法。Shortliffe和Buchananan（1975）在20世纪70年代中期为MYCIN开发了CF模型，这是一个诊断和治疗脑膜炎和血液感染的专家系统。此后，CF模型成为基于规则的系统中进行不确定性管理的标准方法。</p>
+<hr>
+<p><a href="https://engineering.purdue.edu/~engelb/abe565/cf.htm" target="_blank" rel="noopener">原文：Certainty Factors</a></p>
+<ul>
+<li>问题领域的事实和关系（如规则）可能包含不确定性。例如，”如果满足这些条件，这个结果几乎总是会产生。偶尔有一次，会出现不同的结果。”</li>
+<li>用户对一个回答可能会表示怀疑。例如，”我几乎肯定是这个值，然而，值-2也是一种可能。”</li>
+</ul>
+<p>许多ES通过数字化的可信度来处理规则和用户提供的信息的不确定性。大多数是基于MYCIN中的可信度。可信度通常从一些负值到一些正值。例如，从-100到100。可信度为-100表示完全不相信某事，而系数为100表示绝对相信某个规则或价值。</p>
+<h1 id="MYCIN-like-可信度"><a href="#MYCIN-like-可信度" class="headerlink" title="MYCIN-like 可信度"></a>MYCIN-like 可信度</h1><p>CF（previous）被定义为在规则的THEN部分的操作之前，与参数值相关的可信度。CF是通过一个规则添加的新证据的可信度。<br><object data="./可信度模型/MYCIN Certainty Factor Combination Rules.pdf" type="application/pdf" width="100%" height="877px"></object></p>
+<h1 id="结合MYCIN-like可信度的CLIPS规则"><a href="#结合MYCIN-like可信度的CLIPS规则" class="headerlink" title="结合MYCIN-like可信度的CLIPS规则"></a>结合MYCIN-like可信度的CLIPS规则</h1><p>可以复制一个带有这些规则的文件<a href="./可信度模型/cf.clp">cf.clp</a>，以便使用。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>证据理论</title>
     <url>/%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA.html</url>
     <content><![CDATA[<p>原文：<a href="https://en.wikipedia.org/wiki/Dempster%E2%80%93Shafer_theory" target="_blank" rel="noopener">Dempster–Shafer theory</a>;<br>    <a href="https://www.geeksforgeeks.org/ml-dampster-shafer-theory/" target="_blank" rel="noopener" title="ML | Dampster Shafer Theory">ML | Dampster Shafer Theory</a></p>
-<p>信念函数理论，也被称为证据理论或Dempster-Shafer理论(DST)，是一个关于<strong>不确定性推理</strong>的一般框架，与其他框架如概率、可能性和不精确概率理论等都有一定的联系。该理论最初由Arthur P. Dempster 在统计推理的背景下提出，后来由Glenn Shafer发展成为一个用于建模<strong>认知不确定性</strong>的一般框架–一种证据的数学理论。该理论允许人们将不同来源的证据结合起来，并得出一个考虑到所有可用证据的信念程度（由一个称为信念函数的数学对象表示）。<br>从狭义上讲，Dempster-Shafer理论这个术语是指Dempster和Shafer提出的原始概念。然而，更常见的是在更广泛的意义上使用该术语，以适应特定类型的情况。特别是，许多作者提出了不同的证据组合规则，往往是为了更好地处理证据中的冲突。早期的贡献也是许多重要发展的起点，这些发展包括可转移信念模型和暗示理论。</p>
-<p>Dempster Shafer理论是由Arthure P.Dempster在1967年和他的学生Glenn Shafer在1976年提出的。这个理论的提出是因为以下原因：</p>
+<p>信念函数理论，也被称为证据理论（evidence theory）或Dempster-Shafer理论(DST)，是一个关于<strong>不确定性推理</strong>的一般框架，与其他框架如概率、可能性和不精确概率理论等都有一定的联系。该理论最初由Arthur P. Dempster 在统计推理的背景下提出，后来由Glenn Shafer发展成为一个用于建模<strong>认知不确定性</strong>的一般框架–一种证据的数学理论。该理论允许人们将不同来源的证据结合起来，并得出一个考虑到所有可用证据的信念程度（由一个称为信念函数的数学对象表示）。</p>
+<p>从狭义上讲，Dempster-Shafer理论这个术语是指Dempster和Shafer提出的原始概念。然而，更常见的是在更广泛的意义上使用该术语，以适应特定类型的情况。特别是，许多作者提出了不同的证据组合规则，往往是为了更好地处理证据中的冲突。早期的贡献也是许多重要发展的起点，这些发展包括可转移信念模型和暗示理论。</p>
+<h1 id="提出原因"><a href="#提出原因" class="headerlink" title="提出原因"></a>提出原因</h1><p>Dempster Shafer理论是由Arthure P.Dempster在1967年和他的学生Glenn Shafer在1976年提出的。这个理论的提出是因为以下原因：</p>
 <ol>
 <li>贝叶斯理论只关注单一证据。</li>
 <li>贝叶斯概率论不能描述无知。</li>
 </ol>
-<p>DST是一个证据理论，它综合了问题的所有可能的结果。因此，<strong>它被用来解决可能存在不同的证据会导致不同结果的问题</strong>。<br>这个模型中的不确定度是由以下信息给出的：</p>
+<h1 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h1><p>DST综合了问题的所有可能的结果。因此，<strong>它被用来解决可能存在不同的证据会导致不同结果的问题</strong>（是用来计算某个证据的概率的）。<br>这个模型中的不确定度是由以下信息给出的：</p>
 <ol>
 <li>考虑所有可能的结果。</li>
 <li>通过提供一些证据，信念会导致相信某些可能性。</li>
 <li>可行性将使证据与可能的结果相吻合。</li>
 </ol>
-<p>例子：<br>让我们考虑一个房间里有四个人，A、B、C、D（假设）突然熄灯，当灯再次亮起时，B因背部被刀子刺伤而死亡。没有人进入房间，也没有人离开房间，B也没有自杀。那么我们要找出凶手是谁？</p>
+<h1 id="关键概念"><a href="#关键概念" class="headerlink" title="关键概念"></a>关键概念</h1><h2 id="Mass-function"><a href="#Mass-function" class="headerlink" title="Mass function"></a>Mass function</h2><p>主观概率（Masses）被分配给框架的所有子集；通常情况下，只有有限数量的集才会有非零质量（focal element）。</p>
+<h2 id="Belief"><a href="#Belief" class="headerlink" title="Belief"></a>Belief</h2><p> 对一个假设的信念由假设集的所有子集的质量之和构成。它是直接支持给定假说或更具体的假说的信念量，从而形成对其概率的<strong>下限</strong>。信念(通常表示Bel)衡量支持一个命题p的证据的强度，其范围从0(表示无证据)到1(表示确定性)。</p>
+<h2 id="Plaausiblity"><a href="#Plaausiblity" class="headerlink" title="Plaausiblity"></a>Plaausiblity</h2><p>可信度为1减去与假设相交的所有集的质量之和。或者，它可以得到与假设交点不是空的所有集的质量之和。它是对假说可能是真的可能性的<strong>上限</strong>，也就是说，它 “可能是系统的真实状态”，直到这个值，因为只有那么多的证据与该假说相矛盾。可信度（用Pl表示）被定义为Pl(p)=1 - Bel(~ p)。它的范围也从0到1不等，衡量支持~ p 的证据在多大程度上为相信p留下了空间。</p>
+<div style="width:70%;margin:auto"><img src="/%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA/2020-05-28_115834.png" class></div>
+
+<div style="width:70%;margin:auto"><img src="/%E8%AF%81%E6%8D%AE%E7%90%86%E8%AE%BA/2020-05-28_120536.png" class></div>
+
+<h1 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h1><p>一个房间里有四个人，A、B、C、D（假设）突然熄灯，当灯再次亮起时，B因背部被刀子刺伤而死亡。没有人进入房间，也没有人离开房间，B也没有自杀。那么我们要找出凶手是谁？</p>
 <p>要解决这些问题，有以下几种可能。</p>
 <ol>
 <li>{A}或{C}或{D}杀了他。</li>
@@ -24,25 +48,19 @@
 <li>或者他们三个人杀了他，即{A、C、D}。</li>
 <li>没有一个杀了他 {o}。</li>
 </ol>
-<p>这些都是我们可以通过这些证据来找到凶手的证据。<br>用上面的例子，我们可以这样说。<br>可能的结论集(P)： {p1, p2…..pn}<br>其中P是一组可能的结论，不能穷尽，意味着至少有一个(p)i必须为真。<br>(p)i必须是互斥的。<br>Power Set将包含2^n个元素，其中n是可能的集合中的元素数</p>
-<p>例如：<br>如果P = { a, b, c}，那么Power set的值为<br>{o, {a}, {b}, {c}, {a, b}, {b, c}, {a, c}, {a, c}, {a, b, c}}}= 2^3个元素。</p>
-<p><strong>Mass function m(K)</strong>。它是m({K或B})的解释，即，它意味着存在{K或B}的证据，而这些证据不能被K和B的更具体的信念所分割。</p>
-<p>*<em>对K的信念Belief *</em>：Power Set 的元素K的信念是元素K的子集的质量之和。<br>假设K = {a, b, c}。<br>Bel(K) = m(a) + m(b) + m(c) + m(a, b) + m(a, b) + m(a, c) + m(b, c) + m(a, b, c)</p>
-<p><strong>K中的可行性Plaausiblity</strong> ：它是与K相交的集的质量之和。<br>即；Pl(K)=m(a)+m(b)+m(c)+m(a，b)+m(b，c)+m(a，c)+m(a，b，c)</p>
-<p>该理论的特点：</p>
-<ol>
+<p>这些都是我们可以通过这些证据来找到凶手的证据。用上面的例子，我们可以这样说：<br>可能的结论集(P)： {p1, p2…..pn}，其中P是一组可能的结论，不能穷尽，意味着至少有一个pi必须为真。pi必须是互斥的。Power Set将包含2^n个元素，其中n是可能的集合中的元素数。 如果P = { a, b, c}，那么Power set的值为：<br>{o, {a}, {b}, {c}, {a, b}, {b, c}, {a, c}, {a, c}, {a, b, c}}}= 2^3个元素。</p>
+<h1 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h1><ol>
 <li>它将忽略部分，使得所有事件概率合计为1。</li>
 <li>在这个理论中，无知部分通过增加越来越多的证据来减少。</li>
 <li>组合法则是用来组合各种类型的可能性。</li>
 </ol>
-<p>优点：</p>
-<ul>
+<h1 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h1><ul>
 <li>当我们增加更多的信息，不确定性区间就会减少。</li>
 <li>DST的无知程度更低。</li>
 <li>Diagnose Hierarchies可以用它来表示。</li>
 <li>处理这类问题的人，可以自由思考证据。</li>
 </ul>
-<p>缺点：<br>在这个计算中，由于我们必须处理2^n个集，所以计算的工作量很高。</p>
+<h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>在这个计算中，由于我们必须处理2^n个集，所以计算的工作量很高。</p>
 ]]></content>
   </entry>
   <entry>
