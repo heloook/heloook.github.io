@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="专家系统,人工智能," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -81,16 +81,16 @@
 
 
 
+<meta name="description" content="When people tie the knot, they usually get some necessities in different ages. Nowadays, though housing price is soaring, I still think that purchasing an apartment is necessary for marriage.  On the">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何构建一个专家系统">
-<meta property="og:url" content="https://heloook.github.io/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F.html">
+<meta property="og:title" content="Purchasing an Apartment Is Necessary for Marriage">
+<meta property="og:url" content="https://heloook.github.io/Marriage.html">
 <meta property="og:site_name" content="龙小歪的部落格">
+<meta property="og:description" content="When people tie the knot, they usually get some necessities in different ages. Nowadays, though housing price is soaring, I still think that purchasing an apartment is necessary for marriage.  On the">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-26T01:44:16.000Z">
-<meta property="article:modified_time" content="2020-05-26T04:54:37.893Z">
+<meta property="article:published_time" content="2020-10-09T03:22:06.000Z">
+<meta property="article:modified_time" content="2020-10-09T03:25:01.482Z">
 <meta property="article:author" content="heloook">
-<meta property="article:tag" content="专家系统">
-<meta property="article:tag" content="人工智能">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://heloook.github.io/如何构建一个专家系统.html"/>
+  <link rel="canonical" href="https://heloook.github.io/Marriage.html"/>
 
 
 
 
 
-  <title>如何构建一个专家系统 | 龙小歪的部落格</title>
+  <title>Purchasing an Apartment Is Necessary for Marriage | 龙小歪的部落格</title>
   
 
 
@@ -288,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://heloook.github.io/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F.html">
+    <link itemprop="mainEntityOfPage" href="https://heloook.github.io/Marriage.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="heloook">
@@ -305,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何构建一个专家系统</h1>
+          <h1 class="post-title" itemprop="name headline">Purchasing an Apartment Is Necessary for Marriage</h1>
         
 
         <div class="post-meta">
@@ -317,8 +317,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-26T09:44:16+08:00">
-                2020-05-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-10-09T11:22:06+08:00">
+                2020-10-09
               </time>
             
 
@@ -340,8 +340,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index">
-                    <span itemprop="name">专家系统</span>
+                  <a href="/categories/%E8%8C%83%E6%96%87/" itemprop="url" rel="index">
+                    <span itemprop="name">范文</span>
                   </a>
                 </span>
 
@@ -371,7 +371,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  5.9k
+                  188
                 </span>
               
 
@@ -381,10 +381,6 @@
             </div>
           
 
-          
-              <div class="post-description">
-                  
-              </div>
           
 
         </div>
@@ -400,74 +396,9 @@
       
 
       
-        <p>原文：<a href="https://engineering.purdue.edu/~engelb/abe565/es.htm" target="_blank" rel="noopener">Building Expert Systems</a></p>
-<p>本文探讨专家系统（ES）的开发。 本文中包含的许多材料摘自：Jones, D.D. and J.R. Barrett. 1989. Building expert systems. In J.R. Barrett and D.D. Jones (eds). Knowledge Engineering in Agriculture. ASAE Monograph No. 8, ASAE, St. Joseph, MI.</p>
-<h1 id="何时使用专家系统"><a href="#何时使用专家系统" class="headerlink" title="何时使用专家系统"></a>何时使用专家系统</h1><p>ES并不适合所有类型的问题。 最初，许多开发人员积极寻求适合ES解决方案的问题，或者试图解决使用ES遇到的所有问题。 随着经验的积累，<strong>注意力已经更加集中在要解决的问题上</strong>，而不是解决方法上。 请注意，在本课程中，我们专注于系统工程技术和工具，因此已经并且将非常关注解决方案技术。</p>
-<p>一些问题可以用现有的算法来描述，或者用统计评估方法来描述。 其他定义不明确、结构不良、目前需要人类专家帮助的问题，可以使用专家系统适当地解决。 实际上，这些技术正在迅速地与模拟和其他常规编程一起成为解决各种问题的重要工具。 <strong>信息的不完全性</strong>是适合于用专家系统解决的问题的特征。</p>
-<p>“<strong>电话测试</strong>”通常可以用来帮助确定一个用传统方法无法轻易解决的问题是否适合 ES 解决方案。 如果领域专家可以通过与终端用户的电话交换机解决问题，那么也许可以开发专家系统程序来解决这个问题。 另一方面，如果使用者不能口头描述问题，或者如果专家不能在电话访谈的基础上一致地得出一个合理的解决方案，那么专家系统的发展很可能不令人满意。 电话测试确保专家不会从其他感官获得有关问题的额外信息，并确保使用者能够用<strong>语言</strong>充分描述问题(这一点很重要，因为专家服务的使用者需要充分描述问题)。</p>
-<h1 id="ES开发步骤"><a href="#ES开发步骤" class="headerlink" title="ES开发步骤"></a>ES开发步骤</h1><p>如果一个 ES 解决方案是适当的，那么人们应该以一种系统的方式来处理开发，就像本学期前面讨论的系统方法步骤和模型开发步骤一样。 这个过程在很大程度上是一个原型的改进和扩展。 随着组织和代表性的改善，知识基础的深度和广度都有所增加，同时有助于指导后续的发展阶段。 原型成为进一步开发的基础，无论是精炼还是丢弃，还是重新启动过程。 它有助于确定哪些方法最有价值，哪些方法应当摒弃。 这些决策可以尽早做出，从而将开发成本降到最低。</p>
-<p>快速原型设计可以让我们对完成的产品有一个大致的了解。在任何项目中，沟通和跟踪进度都是非常重要的，这不仅对资助机构和主管人员很重要，对那些对充分利用宝贵时间感兴趣的领域专家也很重要。原型应该是可记录的进度指标。与传统的编程方法相比，这是ES的主要优势。</p>
-<p>有几种开发专家系统的一般方法被提出。Waterman (1986)提出了最广泛接受的方法:</p>
-<ol>
-<li>Identification 识别</li>
-<li>Conceptualization 概念化</li>
-<li>Formalization 形式化</li>
-<li>Implementation 实施</li>
-<li>Testing 测试</li>
-</ol>
-<p>这些阶段是高度相关和相互依存的。 迭代过程一直持续下去，直到软件始终在可接受的水平上执行。 注意，上面的步骤基本上是那些<a href="https://engineering.purdue.edu/~engelb/abe565/week2.htm#model%20development%20steps" target="_blank" rel="noopener">模型开发</a>和<a href="https://engineering.purdue.edu/~engelb/abe565/sysanal.htm" target="_blank" rel="noopener">系统分析方法</a>。</p>
-<h2 id="识别"><a href="#识别" class="headerlink" title="识别"></a>识别</h2><p>识别是传统软件开发中进行的需求分析步骤。 它包括一个正式的任务分析，以确定外部需求、输入和输出的形式、程序将被使用的设置以及确定用户(非常重要!)。在这个阶段，需要清楚地确定参与者、问题、目标、资源、费用和时间框架。</p>
-<p>参与者是赞助这项工作的小组、领域专家和知识工程师。 选择一个合适的领域专家对于项目的成功至关重要。 领域专家应该是主题领域的合法权威，因为软件必须拥有高质量的知识，这个人必须有时间和兴趣致力于项目。 不仅需要专家的个人承诺，而且还需要雇主的行政支持，以解除个人的某些现有职责。开发并不是小事，特别是当试图在一个已经全职工作分配的基础上。</p>
-<p>虽然使用人类领域专家是典型的开发方法，但应该指出的是，有几个成功的方案仅使用参考材料，或者只有最少的人类领域专家参与。 这可能看起来与公认的 ES 定义或多或少相矛盾，然而，这些程序确实利用了编程技术，如反向链接来查找程序参数值，解释程序逻辑等。 一个第一手的专家本身是否必须存在，或者一个知识的解释者是否足够，这都是主观的。 不依赖专家的程序通常被称为知识推理系统系统、知识系统或基于规则的系统。</p>
-<p>大多数这些解释都是数据库查询，用于加强查找厚厚的参考手册中的相关信息，例如杂草或化学信息，或者也许用于查找大型诊断手册中的具体信息。 可以说，不仅在编写最初的参考资料方面，而且在将资料转化为解决问题或回答问题所需的格式和顺序方面具有专门知识的程序员也参与了大量的人力专门知识。 随着AI研究人员开创的知识工程技术与常规编程语言一起被集成到程序和数据库管理软件中，传统专家系统开发过程的定义将继续模糊不清。</p>
-<p>为了证明开发的时间和成本的合理性，这个问题对于一个供资组织来说必须是重要的，并且必须有明确的定义。 虽然开发人员不能忽视问题和其他主题领域之间的相互作用，但是应该努力限制问题领域，使程序的建议具体而有价值，而不是一般的教育性。 <strong>选择深度而不是广度</strong>不仅使程序更加强大和有用，而且通过最小化在推荐之前必须从用户那里获得的信息量，使程序更加高效。 例如，对于有大豆害虫问题的用户来说，运行一个处理大豆害虫的程序比运行一个处理大豆生产的程序更有效率。</p>
-<p>软件的具体目标或用途必须被所有各方接受。 目标不仅仅是解决问题。 必须仔细考虑最终用户的背景和需要。</p>
-<p>尽管一个设计得当的用户界面看起来非常重要和显而易见，但它却常常被忽视。 通常，完成知识库的努力是如此困难和费时，开发人员几乎没有精力留给用户界面。</p>
-<p>资金和时间是需要考虑的主要资源。 需要确定的其他资源包括知识来源、计算机硬件和开发软件。 与所有的编程项目一样，这些估计是困难的，但是它们必须是现实的。 预算成本应包括专家和程序员损失的生产力成本，他们将投入时间进行工作，并且不断维护知识库。 同样，预期收益必须包括对未来几年节省的宝贵时间的估计。</p>
-<p>应该对程序的使用寿命进行一些估算。 其他问题包括需要多长时间使用一次专业知识，解决问题的替代方法的成本和可用性以及工作场所中可能的可接受性。 对成本和收益的真实评估可以帮助确定合理的计划细节水平。</p>
-<p>可用的硬件可以极大地影响用于开发的计算机的选择，因为开发人员必须确定帮助消息的范围、图形、问题的形式、输出的范围和格式以及与其他程序和数据库交互的需要。许多故障排除和分类问题需要根据环境的感官检查结果(视觉、嗅觉、感觉等)输入。</p>
-<p>高分辨率彩色图形在农业故障排除或分类应用中特别有用。 应使用高质量，廉价的PC图形以及高分辨率彩色扫描仪和视频捕获设备，以有利于减少用户在回答程序提出的问题或解释程序输出时可能出现的混乱。 最终用户对计算机硬件和软件的经验越少，在设计用户与机器接口时就必须付出更多的努力。 ES具有比常规程序更透明（程序流可以按需提供给用户）的优点，如果用户可能对“黑匣子”计算机输出持怀疑态度，则应利用此能力。</p>
-<h2 id="概念化"><a href="#概念化" class="headerlink" title="概念化"></a>概念化</h2><p>专家系统开发的第二阶段，概念化，包括设计提议的程序（the proposed program），以确保理解和定义问题领域中的特定交互和关系。 确定了对象和过程以及控制机制之间的关键概念和关系。 这是知识获取的初始阶段。 它涉及到情境的具体角色塑造和决定解决问题所需的专业知识。</p>
-<p>知识工程师可以使用以下问题来帮助理解专家的工作:</p>
-<ul>
-<li>专家究竟做了什么决定？</li>
-<li>决定导致的结果是什么？</li>
-<li>哪些结果需要更多的反思、探索或互动？ </li>
-<li>达成决定需要哪些资源或投入？</li>
-<li>当决定一个特定的结果时，存在什么样的条件？</li>
-<li>这些条件如何一致地预测一个给定的结果? </li>
-<li>在接触到有影响力的输入之后的什么时候做出决定？</li>
-<li>给出具体案例的细节，知识工程团队的预测结果是否与专家的预测结果一致？</li>
-</ul>
-<p>使用几种知识获取方法中的一种或几种知识获取方法的组合。 知识获取模块中提供更多详细信息。</p>
-<p>典型的做法是确定最终用户可能向领域专家提出的问题以及可能的解决办法的范围。 开始的一个方法是从一系列最终建议开始，然后<strong>建立通向这些建议的路径</strong>。 例如，在动物生产设施环境故障排除的ES开发中(例子中作了简化) ，最高级别的编程可能包括以下典型的症状和建议:</p>
-<ol>
-<li>动物太冷== &gt;添加绝缘和/或空间加热器</li>
-<li>高湿度== &gt;增加空间加热器和/或增加通风率</li>
-<li>动物太热== &gt;增加通风和/或增加绝缘和/或减少动物密度</li>
-</ol>
-<p>超过这一点的开发过程主要是在顶层就位后对细节进行细化和添加的过程。 例如，在上面的第一条中，将添加额外的信息，以帮助确定“动物太冷”的假设是否属实。 这并不像表面上看起来那么简单，因为单凭建筑物的温度并不能准确地衡量动物的舒适度。 其他考虑因素包括地板是否干燥和铺设良好、使用的地板材料、建筑物是否通风、动物倾向于呆在围栏的什么地方、建筑物内的所有动物是否都有类似的症状，或者这个问题是否只是各例，动物是伸展开还是紧挨着挤在一起，毛发是平放还是竖着，或者它们是否明显在颤抖。</p>
-<p>此外，还需要更多的细节来确定具体的补救措施。 第一项的最终建议将取决于问题的答案，这些问题能否证明动物太冷的假设，如果动物太冷，原因是什么。 例如，如果确定建筑物的隔热程度较低，最终建议将取决于饲养动物的类型和年龄、夏季和冬季的气候条件、动物是否会与包含隔热材料的墙体有物理接触，以及国家和地方建筑法规和防火规范。 同样，推荐的加热器类型取决于饲养动物的类型和年龄、建筑物的类型和条件、当地法规、可用燃料的类型和成本、气候条件、所使用的通风系统类型等。 可以看出，知识库在这个提炼过程中不断发展，以提供与人类专家提出的建议同样准确的建议。</p>
-<p>知识工程师的工作是确定领域专家在提出具体建议时所需的知识来源，即确定需要查阅的参考书、需要进行的计算(或执行的其他计算机程序)以及需要采用哪些经验法则(启发法)。 用户可能不知道的信息应该通过额外的规则或其他知识结构来确定和表示。 然后可以从用户或创建的其他规则中获得应用这些规则所需的附加信息。 这种结构通常是通过与领域专家频繁和密集的访谈创建的。</p>
-<p>应该寻找机会对知识进行分组、排序。例如，在通风问题中，一旦专家知道饲养的动物正在分娩或哺乳，他就会自动丢弃处理较大动物的大部分知识库，从而缩小搜索空间。通常情况下，专家在每次与知识工程师的访谈中都会被呈现3-5个潜在的问题场景，知识工程师以最终用户的身份出现，也可能是一个好奇的用户，不断地询问专家问题的目的和他的答案的详细理由。这有点像一个坚持不懈的孩子在问为什么。</p>
-<p>收集到的信息经过分析，构成了将在下一次会议上与专家一起介绍的情景的基础。 正确和完整地描述专家的问题解决逻辑是困难的，因为真正的<strong>专家通常不知道他们是如何做出决定的</strong>，因此，往往不能有效地用语言表达他们自己的问题解决过程。 仔细研究详细的案例往往会发现解决方案过程中的一致模式，这些模式仍然是模糊的。 在进行深入分析时，对概念和关系的必要改进将变得明显。 此外，如果各方都同意录音，专家和客户之间的谈话录音可能会有用。 这可以识别那些通常可能被专家和扮演用户角色的知识工程师之间的受控会话忽略的要点。 它还有助于防止这一过程成为一种学术活动，并确保最终用户的需求得到满足。</p>
-<p>记录关于某个主题的所有已知信息很容易，人们很容易记录关于一个主题的所有已知信息，在这个过程中忽略了最初的问题意图。 例如，为了开发一个系统来提供关于杂草控制的建议，创建一个专门识别一个地区所有可能杂草的种类的程序是很诱人的。 这将需要用户提供大量可能不必要的投入。 也许唯一相关的信息是杂草是阔叶草还是草，对于特定作物两种被批准的除草剂类型之一将被推荐使用。</p>
-<p>一些 ES 开发工具具有归纳特性，允许根据专家创建的示例创建规则。 这种开发方法对于分类问题常常是有用的。 神经网络也以类似的方式运行，将在以后的作业中进行探讨。</p>
-<h2 id="形式化"><a href="#形式化" class="headerlink" title="形式化"></a>形式化</h2><p>形式化包括将关键概念、子问题和信息流组织成形式化表示。 实际上，程序逻辑是在这个阶段设计的。 对收集到的知识进行分组或模块化通常很有用，甚至可以尝试以图形化的方式显示解决问题的步骤。<br>实际上，知识工程师的工作就是构建一组相关的树结构来表示知识库。 他们必须决定用来解决问题的属性，然后这些属性中的哪些应该向用户询问或者用一组内部决策树来表示。 虽然决策树的简单性很吸引人，并且是将知识形式化为可视化知识表示方案的好方法，但事情在实践中很少这么简单，<strong>严格遵守树型结构也很少令人满意</strong>。</p>
-<p>知识的表示对于用户的可信度和接受度非常重要。所提出的问题和所审查的规则应与人类专家所使用的顺序相同。通过向专家提供几个详细的场景来确定问题及其顺序。概念的粒度和结构，包括概念如何关联到逻辑流以及不确定性如何涉及，在提出建议时是相互协调的。</p>
-<p>对问题域进行分析，以发现决策过程中可能存在的模糊的行为模型和数学模型。 所需信息的特征得到了确认。 因此，随着对不确定性的界定和解释，所涉及的关系会得到更好的理解，最终可以用更便捷的方式利用传统的方案编制技术加以解释。 相应地，程序开发过程作为一个知识收集器发挥作用，可用于探索被理解甚少的关系。</p>
-<p>很难将概念化阶段与形式化阶段分离开来，实际上，知识库设计几乎与知识获取并行进行。 在形式化阶段最重要的两个项目是: (1)将知识片段细化为它们特定的关系和层次结构; (2)更准确地确定预期的用户与系统的交互。</p>
-<h2 id="实施"><a href="#实施" class="headerlink" title="实施"></a>实施</h2><p>在接下来的实现阶段，形式化的知识被映射或编码到开发工具的框架中，从而构建一个工作原型。 将前几个阶段建立的知识结构、推理规则和控制策略的内容组织成适当的格式。 通常，知识工程师会使用程序开发工具来构建一个工作原型，用于记录和组织在正式化阶段收集的信息，以便在这个阶段完成实施。 如果没有，早期阶段的记录就会在这个时候被编码。</p>
-<p>必须考虑到长期的维护。 随着时间的推移，必须预料到对知识库的修改。 对知识库进行编码时，应该对其进行广泛的文档化。 应尽可能减少以后可能出现的误解和混乱。 此外，还应包括广泛的理由和解释，以帮助最终用户充分理解程序向他们提出的问题，以便用户能够有效地使用程序输出，并根据需要向用户显示建议是如何在逻辑上得出的。</p>
-<p>将纳入的帮助的数量将取决于预期用户的能力。 虽然顾问可能有兴趣迅速得到一个问题的答案，但那些必须完成建议的人打算使用的专家系统是不同的。 通常，为了相信建议，最终用户需要了解建议所依据的假设，并希望为程序建议提供可信的理由。</p>
-<p>这也是开发人员必须决定程序如何与其他计算机程序和数据库交互的地方。 第一代专家系统是独立的程序。 许多操作系统没有与操作系统通信的功能，也没有读取或写入数据库的功能。</p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>最后一个阶段，测试，涉及的不仅仅是查找和修复语法错误。 它包括个人关系的验证，程序性能的验证和软件包效用的评估。 测试指导重新制定的概念，重新设计表述和其他细化。 验证及确认必须在整个开发过程中发生。 验证证明程序中的模型是真实的关系。 通过让领域专家操作程序以应对所有可能的意外情况，可以确保知识被准确地模仿。</p>
-<p>也许测试最困难的方面是准确地处理不确定性，这种不确定性以这样或那样的方式包含在大多数专家系统中。 确定性因子是处理不确定性最常用的方法之一。 核查分配给知识库的确定性因素主要是一个反复试验的过程，由领域专家改进初步估计，直到方案始终以满足专家的确定性水平提供建议。 为了确保程序的准确性，必须仔细评估所有可能的解决方案路径。</p>
-<p>一个有效的验证程序对于项目的成功和被接受是至关重要的。 在验证过程中，需要关注以下几个方面: (1)规则的正确性、一致性和完整性; (2)控制策略按照与解决问题过程相对应的顺序考虑信息的能力; (3)关于如何得出结论和为什么需要某些信息的信息是否恰当; 以及最关键的是，(4)计算机程序输出与领域专家的相应解决方案是否一致。</p>
-<p>如何向最终用户提出问题和输出的顺序可能与接受和使用以及建议的准确性有同样大的关系。 如果项目要取得成功，人类工程学的经验教训是不容忽视的。</p>
-<p>验证是一个持续的过程，要求针对特定用户的输出建议是准确的。 通过允许其他人严格审查并提出改进建议，验证得到了加强。 正式的项目评估有助于确定系统是否达到预期的初始目标。 评价过程侧重于发现问题的可信性、可接受性和实用性。 这可以通过程序的准确性来确定，而程序的准确性是通过与实际环境的比较确定的。 包括对程序的理解和灵活性、易用性、设计的适应性以及解决方案的正确性。</p>
-<hr>
-<p>Waterman, D.A. 1986. A guide to expert systems. Addison-Wesley Publishing Co., Inc., Reading, MA.</p>
+        <p>When people tie the knot, they usually get some necessities in different ages. Nowadays, though housing price is soaring, I still think that purchasing an apartment is necessary for marriage. </p>
+<p>On the one hand, home is very important for every one. For my money, a house which is rented can’t be called home in our Chinese traditional concepts. What’s more, home can bring us the sense of security which most of us are searching for it in marriage. So to some extent, purchasing an apartment can fulfill our need in this aspect.</p>
+<p>On the other hand, the economic foundation is a key element to keep a stable marriage. As we all know, people now bear many pressures. For example, many couples’ salaries can’t even afford their daily expenses, not to mention the fact that they will have their babies and have to pay some consequent expenses. Many people can’t deal with these and choose to divorce. Therefore, economic capability is also important for marriage. To sum up, purchasing an apartment is important for marriage, which can let the marriage life be happier and steadier.</p>
 
       
     </div>
@@ -488,7 +419,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://heloook.github.io/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F.html" title="如何构建一个专家系统">https://heloook.github.io/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F.html</a>
+    <a href="https://heloook.github.io/Marriage.html" title="Purchasing an Apartment Is Necessary for Marriage">https://heloook.github.io/Marriage.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -501,14 +432,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F/" rel="tag"># 专家系统</a>
-          
-            <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" rel="tag"># 人工智能</a>
-          
-        </div>
-      
 
       
       
@@ -518,8 +441,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/%E5%A6%82%E4%BD%95%E5%88%86%E6%9E%90%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BF%83%E7%90%86%E9%97%AE%E9%A2%98.html" rel="next" title="如何分析自己的心理问题">
-                <i class="fa fa-chevron-left"></i> 如何分析自己的心理问题
+              <a href="/%E9%80%89%E6%8B%A9.html" rel="next" title="选择">
+                <i class="fa fa-chevron-left"></i> 选择
               </a>
             
           </div>
@@ -527,10 +450,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B%EF%BC%88%E4%B8%80%EF%BC%89.html" rel="prev" title="专家系统简介（一）">
-                专家系统简介（一） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -592,17 +511,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -676,22 +586,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#何时使用专家系统"><span class="nav-number">1.</span> <span class="nav-text">何时使用专家系统</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ES开发步骤"><span class="nav-number">2.</span> <span class="nav-text">ES开发步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#识别"><span class="nav-number">2.1.</span> <span class="nav-text">识别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概念化"><span class="nav-number">2.2.</span> <span class="nav-text">概念化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#形式化"><span class="nav-number">2.3.</span> <span class="nav-text">形式化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实施"><span class="nav-number">2.4.</span> <span class="nav-text">实施</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">2.5.</span> <span class="nav-text">测试</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -847,9 +741,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://heloook.github.io/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%93%E5%AE%B6%E7%B3%BB%E7%BB%9F.html';
-          this.page.identifier = '如何构建一个专家系统.html';
-          this.page.title = '如何构建一个专家系统';
+          this.page.url = 'https://heloook.github.io/Marriage.html';
+          this.page.identifier = 'Marriage.html';
+          this.page.title = 'Purchasing an Apartment Is Necessary for Marriage';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://https-heloook-github-io-3.disqus.com/embed.js';
